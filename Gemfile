@@ -53,7 +53,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#temp sensor
-gem 'dht-sensor-ffi', require: false
+if ENV['VEHICLE_SERVER_DEV'] == false
+  gem 'dht-sensor-ffi'
+end
 
 gem 'timepiece'

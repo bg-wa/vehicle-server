@@ -1,3 +1,3 @@
-<div id="temperature"><%= @val.temp_f %> F&deg;</div>
-<div id="humidity"><%= @val.humidity %>%</div>
+<div id="temperature"><%= @val ? @val.temp_f : '100.00' %> F&deg;</div>
+<div id="humidity"><%= @val ? @val.humidity : '100.00' %>%</div>
 <div id="clock"><%= timepiece %></div>
