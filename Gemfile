@@ -56,6 +56,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'dht-sensor-ffi' if RUBY_PLATFORM.include?("arm")
 
-gem 'mapbox-rails'
-
 gem 'figaro'
+
+gem 'rufus-scheduler'
+gem 'delayed_job_active_record'
+
+
