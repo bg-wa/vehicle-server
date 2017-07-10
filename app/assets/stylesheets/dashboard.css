@@ -15,19 +15,24 @@ html, body, #map{
     z-index: 0;
 }
 
-#temperature, #humidity{
+#temperature, #humidity, #clock{
     font-size: 24pt;
     color: #333333;
     z-index: 1;
     position: absolute;
-    right: 0;
 }
 
 #temperature{
     top: 0;
+    right: 0;
 }
 
 #humidity{
-    position: absolute;
+    right: 0;
     top: 40px;
+}
+
+#clock{
+    top: 0;
+    left: 0;
 }

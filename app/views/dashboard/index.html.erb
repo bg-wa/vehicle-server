@@ -3,6 +3,7 @@
 
 <div id="temperature"><%= @val ? @val.temp_f : '100.00' %> F&deg;</div>
 <div id="humidity"><%= @val ? @val.humidity : '100.00' %>%</div>
+<div id="clock"></div>
 
 <div id='map' style='width: 400px; height: 300px;'></div>
 <script>
@@ -11,4 +12,4 @@
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9'
   });
-</script>.
+</script>
