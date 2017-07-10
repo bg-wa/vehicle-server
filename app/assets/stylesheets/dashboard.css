@@ -1,2 +1,33 @@
 /*
 */
+
+html, body, #map{
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+#map{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#temperature, #humidity{
+    font-size: 24pt;
+    color: #333333;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
+
+#temperature{
+    top: 0;
+}
+
+#humidity{
+    position: absolute;
+    top: 40px;
+}
