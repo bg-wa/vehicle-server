@@ -61,4 +61,5 @@ gem 'figaro'
 gem 'rufus-scheduler'
 gem 'delayed_job_active_record'
 
+gem 'jsonapi-resources'
 
