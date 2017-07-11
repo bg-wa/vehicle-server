@@ -65,3 +65,5 @@ gem 'jsonapi-resources'
 
 gem 'foundation-rails', '6.3.1'
 
+gem 'oj'
+

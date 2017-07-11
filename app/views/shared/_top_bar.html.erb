@@ -6,8 +6,8 @@
   </div>
   <div class="top-bar-right">
     <ul class="menu">
-      <li id="temperature" class="menu-text"><%= @dht11_reading? @dht11_reading.temperature_fahrenheit : '100.00' %> F&deg;</li>
-      <li id="humidity" class="menu-text"><%= @dht11_reading ? @dht11_reading.humidity : '100.00' %>%</li>
+      <li id="temperature" class="menu-text"><%= @dht11_reading? @dht11_reading.temperature_fahrenheit.to_i : '100' %> F&deg;</li>
+      <li id="humidity" class="menu-text"><%= @dht11_reading ? @dht11_reading.humidity.to_i : '100' %>%</li>
     </ul>
   </div>
 </div>

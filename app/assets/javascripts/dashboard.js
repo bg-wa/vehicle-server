@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    setTimeout(updateClock, 1000)
+    setInterval(updateClock, 1000)
+    setInterval(updateTemperature, 60000)
 });
 
 function updateClock() {
@@ -9,6 +10,13 @@ function updateClock() {
     var suffix = (hours >= 12)? 'pm' : 'am';
     hours = ((hours + 11) % 12 + 1);
     $('#clock').text(hours + ':' + minutes + ' ' +suffix);
+}
+
+function updateTemperature(){
+    $.getJSON('/dht11-reading', function(data){
+        $('#temperature').html( data.temperature_fahrenheit + ' F&deg;')
+        $('#humidity').html( data.humidity + '%')
+    })
 }
 
 function pad (str, max) {

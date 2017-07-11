@@ -1,12 +1,8 @@
 Rails.application.routes.draw do
-  mount ActionCable.server => '/cable'
-
   get 'dashboard/index'
   get 'remote', to: 'remote#index'
 
-  scope 'api' do
-    jsonapi_resource :dht11_readings
-  end
+  jsonapi_resource :dht11_reading
 
   root('dashboard#index')
 end
