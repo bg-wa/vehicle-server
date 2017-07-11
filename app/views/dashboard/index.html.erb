@@ -1,11 +1,7 @@
 <script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
 
-<div id="temperature"><%= @dht11_reading? @dht11_reading.temperature_fahrenheit : '100.00' %> F&deg;</div>
-<div id="humidity"><%= @dht11_reading ? @dht11_reading.humidity : '100.00' %>%</div>
-<div id="clock"></div>
-
-<div id='map' style='width: 400px; height: 300px;'></div>
+<div id='map'></div>
 <script>
   mapboxgl.accessToken = '<%= ENV['mapbox_token'] %>';
   var map = new mapboxgl.Map({

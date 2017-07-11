@@ -9,30 +9,7 @@ html, body, #map{
 }
 
 #map{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-#temperature, #humidity, #clock{
-    font-size: 24pt;
-    color: #333333;
-    z-index: 1;
-    position: absolute;
-}
-
-#temperature{
-    top: 0;
-    right: 0;
-}
-
-#humidity{
-    right: 0;
-    top: 40px;
-}
-
-#clock{
+    position: relative;
     top: 0;
     left: 0;
 }

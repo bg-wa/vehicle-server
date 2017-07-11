@@ -1,0 +1,13 @@
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="menu" data-dropdown-menu>
+      <li class="menu-text"><div id="clock"></div></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li id="temperature" class="menu-text"><%= @dht11_reading? @dht11_reading.temperature_fahrenheit : '100.00' %> F&deg;</li>
+      <li id="humidity" class="menu-text"><%= @dht11_reading ? @dht11_reading.humidity : '100.00' %>%</li>
+    </ul>
+  </div>
+</div>

@@ -63,3 +63,5 @@ gem 'delayed_job_active_record'
 
 gem 'jsonapi-resources'
 
+gem 'foundation-rails', '6.3.1'
+
